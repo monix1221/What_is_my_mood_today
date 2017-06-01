@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="activityMainViews"
+            type="com.example.android.whatismymoodtoday.MainActivity" />
+    </data>
+
+<FrameLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.android.whatismymoodtoday.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_welcome_info_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_basics"
+                android:text="@string/welcome_text"
+                android:textSize="@dimen/text_medium_size" />
+            <TextView
+                android:id="@+id/tv_emotion_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_basics"
+                android:text="You are: 98% happy today!"
+                android:textSize="@dimen/text_medium_size"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/iv_uploaded_face_photo"
+                android:layout_width="@dimen/picture_size"
+                android:layout_height="@dimen/picture_size"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryLight"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_photo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb_loading_indicator"
+                    style="@android:style/Widget.ProgressBar.Inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/padding_for_buttons"
+                    android:layout_marginLeft="@dimen/loading_margin_big"
+                    android:paddingTop="@dimen/padding_basics"
+                    />
+
+                <TextView
+                    android:paddingTop="@dimen/padding_basics"
+                    android:id="@+id/tv_loading_indicator"
+                    android:gravity="center_horizontal|clip_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading_emotios"
+                    android:textSize="@dimen/text_medium_size"
+                    android:layout_centerVertical="true"
+                    android:layout_alignStart="@+id/pb_loading_indicator"
+                    android:layout_marginStart="75dp"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/loading_margin_medium"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_choose_how_to_upload_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_basics"
+                android:text="@string/choose_uploading"
+                android:textSize="@dimen/text_medium_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin_for_buttons"
+                    android:padding="@dimen/padding_for_buttons"
+                    android:text="gallery" />
+
+                <Button
+                    android:id="@+id/button_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_for_buttons"
+                    android:padding="@dimen/padding_for_buttons"
+                    android:text="camera" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_face_photo_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_basics"
+                android:text="@string/sample_response_before_uploading"
+                android:textSize="@dimen/text_medium_size" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+</layout>

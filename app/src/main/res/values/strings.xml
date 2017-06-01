@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">What is my mood today?</string>
+    <string name="emotion_API_key">"Place your API key here!"</string>
+    <string name="welcome_text">Hello! Upload a photo below and see what is your mood today! \nIt can only recognize human faces</string>
+    <string name="choose_uploading">Choose how you want to upload your photo</string>
+    <string name="sample_response_before_uploading">Here will be your emotion recognition response</string>
+    <string name="upload_another_photo">Choose another photo</string>
+    <string name="loading_emotios">Loading emotions...</string>
+    <string name="empty_emotion_result">Your emotions are empty :( Try again!</string>
+    <string name="you_got">You got:</string>
+</resources>

@@ -10,7 +10,7 @@ Here are some examples:
   </p>
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/25307853/26700123/80e17e1e-471c-11e7-8df1-2ff8d4e58187.png" width="250"/>
-  <img src="https://cloud.githubusercontent.com/assets/25307853/26700124/81033360-471c-11e7-8635-20fe21c23153.png" width="250"/>
+  <img src="https://cloud.githubusercontent.com/assets/25307853/26700601/3ab2e9f8-471e-11e7-9adb-a1dd894f5d56.png" width="250"/>
 </p>
 
 The application is powered by Microsoft Cognitive Services. 

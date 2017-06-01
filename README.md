@@ -19,8 +19,12 @@ To run my app you should have a valid API key (it's free to get on: https://azur
 The application is not finish yet, I still need to improve it. 
 
 
+To make this app work I got help from https://github.com/Microsoft/Cognitive-Emotion-Android and some stackoverflow questions! 
+
 ***
 'Important info from Microsoft Azure: 
 By uploading data for this demo you agree that Microsoft may store it and use it to improve Microsoft services, 
 such as making this API better. To help protect your privacy, we take steps to de-identify your data and keep it secure. 
 We won’t publish your data or let other people use it.'
+
+
